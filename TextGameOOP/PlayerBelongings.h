@@ -6,12 +6,13 @@
 class PlayerBelongings
 {
 protected:
-	bool isTaken = false;  
-	bool isFound = false;
+	bool isTaken;
+	bool isFound;
 public:
 	PlayerBelongings()
 	{
-
+		isTaken = false;  
+		isFound = false;
 	}
 	void Taken()
 	{
@@ -35,8 +36,13 @@ public:
 class Gown : public PlayerBelongings
 {
 private:
-	bool isOpened = false;
+	bool isOpened;
 public:
+	Gown()
+	{
+		isOpened = false;
+	}
+
 	void Opened()
 	{
 		isOpened = true;
@@ -72,8 +78,12 @@ public:
 class Phone : public PlayerBelongings
 {
 private:
-	bool isUsed = false;
+	bool isUsed;
 public:
+	Phone()
+	{
+		isUsed = false;
+	}
 	void PrintUseMessage()
 	{
 		std::cout << "Works";
@@ -91,8 +101,13 @@ public:
 class Mail : public PlayerBelongings
 {
 private:
-	bool isRead = false;
+	bool isRead;
 public:
+	Mail()
+	{
+		isRead = false;
+	}
+
 	void PrintUseMessage()
 	{
 		std::cout << "Works";
@@ -110,8 +125,13 @@ public:
 class Lamp : public PlayerBelongings
 {
 private:
-	bool isOn = false;
+	bool isOn;
 public:
+	Lamp()
+	{
+		isOn = false;
+	}
+
 	void PrintUseMessage()
 	{
 		std::cout << "Works1";
@@ -130,8 +150,13 @@ public:
 class Door : public PlayerBelongings
 {
 private:
-	bool isUsed = false;
+	bool isUsed;
 public:
+	Door()
+	{
+		isUsed = false;
+	}
+
 	void PrintUseMessage()
 	{
 		std::cout << "Works";
@@ -149,8 +174,13 @@ public:
 class Analgesic : public PlayerBelongings
 {
 private:
-	bool isUsed = false;
+	bool isUsed;
 public:
+	Analgesic()
+	{
+		isUsed = false;
+	}
+
 	void PrintUseMessage()
 	{
 		 std::cout << "Works";

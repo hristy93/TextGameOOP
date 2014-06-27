@@ -7,6 +7,7 @@ Option::Option(std::string optionNum)
 {
 	this->optionNum = optionNum;
 	lastOption = optionNum;
+	optionAdditionalInfo = "";
 }
 
 void Option::ChooseOption()

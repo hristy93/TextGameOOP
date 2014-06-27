@@ -10,12 +10,13 @@
 class Game : public GameObjects
 {
 private:
-	bool ended = false;
-	bool finished = false;
+	bool ended;
+	bool finished;
 public:
 	Game() 
 	{
-
+		ended = false;
+		finished = false;
 	}
 	void Run();
 	void RestartOrExit(bool ended, bool finished);

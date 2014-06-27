@@ -11,7 +11,7 @@ class Option
 private:
 	std::string optionNum;
 	std::string optionName;
-	std::string optionAdditionalInfo = "";
+	std::string optionAdditionalInfo;
 public:
 	static std::string lastOption;
 
